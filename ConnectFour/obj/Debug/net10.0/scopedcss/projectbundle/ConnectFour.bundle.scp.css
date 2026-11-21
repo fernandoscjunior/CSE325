@@ -1,0 +1,259 @@
+/* /Components/Board.razor.rz.scp.css */
+div[b-2hsj6j6moh]{position:relative;display: grid;grid-template-columns: 1fr 1fr;}nav[b-2hsj6j6moh]{top:4em;width:30em;display:inline-flex;flex-direction:row;margin-left:10px}nav span[b-2hsj6j6moh]{width:4em;text-align:center;cursor:pointer;font-size:1em}div.board[b-2hsj6j6moh]{margin-top:1em;flex-wrap:wrap;width:30em;height:24em;overflow:hidden;display:inline-flex;flex-direction:row;flex-wrap:wrap;z-index:-5;row-gap:0;pointer-events:none;border-left:10px solid var(--board-bg)}span.container[b-2hsj6j6moh]{width:4em;height:4em;margin:0;padding:4px;overflow:hidden;background-color:transparent;position:relative;z-index:-2;pointer-events:none}.container span[b-2hsj6j6moh]{width:3.5em;height:3.5em;border-radius:50%;box-shadow:0 0 0 3em var(--board-bg);left:0;position:absolute;display:block;z-index:5;pointer-events:none}.player1[b-2hsj6j6moh],.player2[b-2hsj6j6moh]{width:3.5em;height:3.5em;border-radius:50%;left:0;top:0;position:absolute;display:block;z-index:-8}.player1[b-2hsj6j6moh]{background-color:var(--player1);animation-timing-function:cubic-bezier(.5,.05,1,.5);animation-iteration-count:1;animation-fill-mode:forwards;box-shadow:0 0 0 4px var(--player1)}.player2[b-2hsj6j6moh]{background-color:var(--player2);animation-timing-function:cubic-bezier(.5,.05,1,.5);animation-iteration-count:1;animation-fill-mode:forwards;box-shadow:0 0 0 4px var(--player2)}.col0[b-2hsj6j6moh]{left:calc(0em + 9px)}.col1[b-2hsj6j6moh]{left:calc(4em + 9px)}.col2[b-2hsj6j6moh]{left:calc(8em + 9px)}.col3[b-2hsj6j6moh]{left:calc(12em + 9px)}.col4[b-2hsj6j6moh]{left:calc(16em + 9px)}.col5[b-2hsj6j6moh]{left:calc(20em + 9px)}.col6[b-2hsj6j6moh]{left:calc(24em + 9px)}.drop1[b-2hsj6j6moh]{animation-duration:1s;animation-name:drop1-b-2hsj6j6moh}.drop2[b-2hsj6j6moh]{animation-duration:1.5s;animation-name:drop2-b-2hsj6j6moh}.drop3[b-2hsj6j6moh]{animation-duration:1.6s;animation-name:drop3-b-2hsj6j6moh}.drop4[b-2hsj6j6moh]{animation-duration:1.7s;animation-name:drop4-b-2hsj6j6moh}.drop5[b-2hsj6j6moh]{animation-duration:1.8s;animation-name:drop5-b-2hsj6j6moh}.drop6[b-2hsj6j6moh]{animation-duration:1.9s;animation-name:drop6-b-2hsj6j6moh}@keyframes drop1-b-2hsj6j6moh{100%,75%,90%,97%{transform:translateY(1.27em)}80%{transform:translateY(.4em)}95%{transform:translateY(.8em)}99%{transform:translateY(1em)}}@keyframes drop2-b-2hsj6j6moh{100%,75%,90%,97%{transform:translateY(5.27em)}80%{transform:translateY(3.8em)}95%{transform:translateY(4.6em)}99%{transform:translateY(4.9em)}}@keyframes drop3-b-2hsj6j6moh{100%,75%,90%,97%{transform:translateY(9.27em)}80%{transform:translateY(7.2em)}95%{transform:translateY(8.3em)}99%{transform:translateY(8.8em)}}@keyframes drop4-b-2hsj6j6moh{100%,75%,90%,97%{transform:translateY(13.27em)}80%{transform:translateY(10.6em)}95%{transform:translateY(12em)}99%{transform:translateY(12.7em)}}@keyframes drop5-b-2hsj6j6moh{100%,75%,90%,97%{transform:translateY(17.27em)}80%{transform:translateY(14em)}95%{transform:translateY(15.7em)}99%{transform:translateY(16.5em)}}@keyframes drop6-b-2hsj6j6moh{100%,75%,90%,97%{transform:translateY(21.27em)}80%{transform:translateY(17.4em)}95%{transform:translateY(19.4em)}99%{transform:translateY(20.4em)}}.moves[b-2hsj6j6moh]{display: flex;flex-flow: column;}
+/* /Components/Layout/MainLayout.razor.rz.scp.css */
+.page[b-dzoor4i9v5] {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+main[b-dzoor4i9v5] {
+    flex: 1;
+}
+
+.sidebar[b-dzoor4i9v5] {
+    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+}
+
+.top-row[b-dzoor4i9v5] {
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #d6d5d5;
+    justify-content: flex-end;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+}
+
+    .top-row[b-dzoor4i9v5]  a, .top-row[b-dzoor4i9v5]  .btn-link {
+        white-space: nowrap;
+        margin-left: 1.5rem;
+        text-decoration: none;
+    }
+
+    .top-row[b-dzoor4i9v5]  a:hover, .top-row[b-dzoor4i9v5]  .btn-link:hover {
+        text-decoration: underline;
+    }
+
+    .top-row[b-dzoor4i9v5]  a:first-child {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+@media (max-width: 640.98px) {
+    .top-row[b-dzoor4i9v5] {
+        justify-content: space-between;
+    }
+
+    .top-row[b-dzoor4i9v5]  a, .top-row[b-dzoor4i9v5]  .btn-link {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 641px) {
+    .page[b-dzoor4i9v5] {
+        flex-direction: row;
+    }
+
+    .sidebar[b-dzoor4i9v5] {
+        width: 250px;
+        height: 100vh;
+        position: sticky;
+        top: 0;
+    }
+
+    .top-row[b-dzoor4i9v5] {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+    .top-row.auth[b-dzoor4i9v5]  a:first-child {
+        flex: 1;
+        text-align: right;
+        width: 0;
+    }
+
+    .top-row[b-dzoor4i9v5], article[b-dzoor4i9v5] {
+        padding-left: 2rem !important;
+        padding-right: 1.5rem !important;
+    }
+}
+
+#blazor-error-ui[b-dzoor4i9v5] {
+    color-scheme: light only;
+    background: lightyellow;
+    bottom: 0;
+    box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    display: none;
+    left: 0;
+    padding: 0.6rem 1.25rem 0.7rem 1.25rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+    #blazor-error-ui .dismiss[b-dzoor4i9v5] {
+        cursor: pointer;
+        position: absolute;
+        right: 0.75rem;
+        top: 0.5rem;
+    }
+/* /Components/Layout/ReconnectModal.razor.rz.scp.css */
+.components-reconnect-first-attempt-visible[b-hrtxlvwyyl],
+.components-reconnect-repeated-attempt-visible[b-hrtxlvwyyl],
+.components-reconnect-failed-visible[b-hrtxlvwyyl],
+.components-pause-visible[b-hrtxlvwyyl],
+.components-resume-failed-visible[b-hrtxlvwyyl],
+.components-rejoining-animation[b-hrtxlvwyyl] {
+    display: none;
+}
+
+#components-reconnect-modal.components-reconnect-show .components-reconnect-first-attempt-visible[b-hrtxlvwyyl],
+#components-reconnect-modal.components-reconnect-show .components-rejoining-animation[b-hrtxlvwyyl],
+#components-reconnect-modal.components-reconnect-paused .components-pause-visible[b-hrtxlvwyyl],
+#components-reconnect-modal.components-reconnect-resume-failed .components-resume-failed-visible[b-hrtxlvwyyl],
+#components-reconnect-modal.components-reconnect-retrying[b-hrtxlvwyyl],
+#components-reconnect-modal.components-reconnect-retrying .components-reconnect-repeated-attempt-visible[b-hrtxlvwyyl],
+#components-reconnect-modal.components-reconnect-retrying .components-rejoining-animation[b-hrtxlvwyyl],
+#components-reconnect-modal.components-reconnect-failed[b-hrtxlvwyyl],
+#components-reconnect-modal.components-reconnect-failed .components-reconnect-failed-visible[b-hrtxlvwyyl] {
+    display: block;
+}
+
+
+#components-reconnect-modal[b-hrtxlvwyyl] {
+    background-color: white;
+    width: 20rem;
+    margin: 20vh auto;
+    padding: 2rem;
+    border: 0;
+    border-radius: 0.5rem;
+    box-shadow: 0 3px 6px 2px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: display 0.5s allow-discrete, overlay 0.5s allow-discrete;
+    animation: components-reconnect-modal-fadeOutOpacity-b-hrtxlvwyyl 0.5s both;
+    &[open]
+
+{
+    animation: components-reconnect-modal-slideUp-b-hrtxlvwyyl 1.5s cubic-bezier(.05, .89, .25, 1.02) 0.3s, components-reconnect-modal-fadeInOpacity-b-hrtxlvwyyl 0.5s ease-in-out 0.3s;
+    animation-fill-mode: both;
+}
+
+}
+
+#components-reconnect-modal[b-hrtxlvwyyl]::backdrop {
+    background-color: rgba(0, 0, 0, 0.4);
+    animation: components-reconnect-modal-fadeInOpacity-b-hrtxlvwyyl 0.5s ease-in-out;
+    opacity: 1;
+}
+
+@keyframes components-reconnect-modal-slideUp-b-hrtxlvwyyl {
+    0% {
+        transform: translateY(30px) scale(0.95);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes components-reconnect-modal-fadeInOpacity-b-hrtxlvwyyl {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes components-reconnect-modal-fadeOutOpacity-b-hrtxlvwyyl {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.components-reconnect-container[b-hrtxlvwyyl] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+#components-reconnect-modal p[b-hrtxlvwyyl] {
+    margin: 0;
+    text-align: center;
+}
+
+#components-reconnect-modal button[b-hrtxlvwyyl] {
+    border: 0;
+    background-color: #6b9ed2;
+    color: white;
+    padding: 4px 24px;
+    border-radius: 4px;
+}
+
+    #components-reconnect-modal button:hover[b-hrtxlvwyyl] {
+        background-color: #3b6ea2;
+    }
+
+    #components-reconnect-modal button:active[b-hrtxlvwyyl] {
+        background-color: #6b9ed2;
+    }
+
+.components-rejoining-animation[b-hrtxlvwyyl] {
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+    .components-rejoining-animation div[b-hrtxlvwyyl] {
+        position: absolute;
+        border: 3px solid #0087ff;
+        opacity: 1;
+        border-radius: 50%;
+        animation: components-rejoining-animation-b-hrtxlvwyyl 1.5s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+    }
+
+        .components-rejoining-animation div:nth-child(2)[b-hrtxlvwyyl] {
+            animation-delay: -0.5s;
+        }
+
+@keyframes components-rejoining-animation-b-hrtxlvwyyl {
+    0% {
+        top: 40px;
+        left: 40px;
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+
+    4.9% {
+        top: 40px;
+        left: 40px;
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+
+    5% {
+        top: 40px;
+        left: 40px;
+        width: 0;
+        height: 0;
+        opacity: 1;
+    }
+
+    100% {
+        top: 0px;
+        left: 0px;
+        width: 80px;
+        height: 80px;
+        opacity: 0;
+    }
+}

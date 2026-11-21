@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>My.FirstClassLibrary</id>
+    <version>0.1.0</version>
+    <authors>Fernando Costa Jr</authors>
+    <description>This is a Razor component library with a cool modal window component.</description>
+    <repository type="git" commit="b0e0776c53c2e51637ed9619f3c68484c1e7cc97" />
+    <dependencies>
+      <group targetFramework="net10.0">
+        <dependency id="Microsoft.AspNetCore.Components.Web" version="10.0.12" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\ferna\code\cse325\FirstClassLibrary\bin\Release\net10.0\FirstClassLibrary.dll" target="lib\net10.0\FirstClassLibrary.dll" />
+    <file src="C:\Users\ferna\code\cse325\FirstClassLibrary\obj\Release\net10.0\scopedcss\projectbundle\My.FirstClassLibrary.bundle.scp.css" target="staticwebassets\My.FirstClassLibrary.dih4x2plnq.bundle.scp.css" />
+    <file src="C:\Users\ferna\code\cse325\FirstClassLibrary\wwwroot\background.png" target="staticwebassets\background.png" />
+    <file src="C:\Users\ferna\code\cse325\FirstClassLibrary\wwwroot\exampleJsInterop.js" target="staticwebassets\exampleJsInterop.js" />
+    <file src="C:\Users\ferna\code\cse325\FirstClassLibrary\obj\Release\net10.0\staticwebassets\msbuild.My.FirstClassLibrary.Microsoft.AspNetCore.StaticWebAssetEndpoints.props" target="build\Microsoft.AspNetCore.StaticWebAssetEndpoints.props" />
+    <file src="C:\Users\ferna\code\cse325\FirstClassLibrary\obj\Release\net10.0\staticwebassets\msbuild.My.FirstClassLibrary.Microsoft.AspNetCore.StaticWebAssets.props" target="build\Microsoft.AspNetCore.StaticWebAssets.props" />
+    <file src="C:\Users\ferna\code\cse325\FirstClassLibrary\obj\Release\net10.0\staticwebassets\msbuild.build.My.FirstClassLibrary.props" target="build\My.FirstClassLibrary.props" />
+    <file src="C:\Users\ferna\code\cse325\FirstClassLibrary\obj\Release\net10.0\staticwebassets\msbuild.buildMultiTargeting.My.FirstClassLibrary.props" target="buildMultiTargeting\My.FirstClassLibrary.props" />
+    <file src="C:\Users\ferna\code\cse325\FirstClassLibrary\obj\Release\net10.0\staticwebassets\msbuild.buildTransitive.My.FirstClassLibrary.props" target="buildTransitive\My.FirstClassLibrary.props" />
+  </files>
+</package>
